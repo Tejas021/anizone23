@@ -1,0 +1,232 @@
+.carousel-inner img{
+  height:100%;
+  width:100%;
+}
+carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+html,body{
+height:100%;
+width:100%;
+
+}
+
+.navbar{
+  padding-bottom:10px;
+}
+
+.navbar-nav li{
+ padding-right: 30px;
+}
+.navlink{
+ font-size: 1.1em !important;
+}
+
+.carousel-caption{
+  position:absolute;
+  top:50%;
+  transform:translateY(-30%);
+}
+.carousel-caption h1{
+font-size:400%;
+text-transform:uppercase;
+text-shadow: 1px 1px 10px #000;
+}
+
+ .carousel-caption h3{
+   font-size: 150%;
+   font-weight: 500%;
+   text-shadow: 1px 1px 10px #000;
+   padding-bottom: 10px;
+ }
+ .btn-primary{
+   background-color: red;
+   border:1px solid #563d7c;
+ }
+.btn-primary:hover{
+  background-color: grey;
+  border:1px solid #563d7c;
+}
+
+.welcome hr{
+  border-top:2px solid #b4b4b4;
+  width:95%;
+  margin-top:1rem;
+  margin-bottom:2rem;
+}
+
+.social a{
+  font-size: 3em;
+  padding:1rem;
+}
+.fa-facebook{
+  color:#3b5998;
+}
+.fa-google-plus-g{
+  color:#db4a39;
+}
+.fa-instagram{
+  color:#3f729b;
+}
+.fa-youtube{
+  color:red;
+}
+.fa-twitter{
+  color:#00acee;
+}
+footer{
+  background: #3f3f3f;
+color:#d5d5d5;
+padding-top: 20px;}
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width:75%;
+
+}
+hr.light-100{
+  width:100%;
+  border-top: 1px solid #d5d5d5;
+}
+.fa-twitter:hover{
+  color:grey;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a{
+    font-size:3em;
+  }
+  }
+@media (max-width: 768px) {
+  .carousel-caption{
+
+    top:50%;
+
+  }
+  .carousel-caption h1{
+  font-size:350%;
+  text-transform:uppercase;
+  text-shadow: 1px 1px 10px #000;
+  }
+
+   .carousel-caption h3{
+     font-size: 100%;
+     font-weight: 400%;
+     text-shadow: 1px 1px 10px #000;
+     padding-bottom: .2rem;
+   }
+.carousel-caption .btn{
+  font-size:95%;
+  padding:8px 14px 8px 14px;
+
+}
+}
+
+@media (max-width: 576px) {
+.jumbotron h5 {
+  font-size:110%;
+}
+.jumbotron a{
+  font-size:100%
+
+}
+
+  .carousel-caption{
+
+    top:25%;
+
+  }
+  .carousel-caption h1{
+  font-size:180%;
+
+  }
+
+   .carousel-caption h3{
+     font-size: 90%;
+
+   }
+   .carousel-caption .btn{
+     font-size:80%;
+     padding:4px 8px 0px 8px;
+  margin:0px;
+   }
+   .carousel-indicators{
+     display:none;
+   }
+   .social a{
+     font-size:2rem;
+     padding:5px;
+   }
+   .display-4{
+     font-size:160%;
+   }
+
+   .navbar{
+     height:10px:
+   }
+   h3{
+     font-size:110%;
+   }
+   p{
+     font-size:90%;
+   }
+   lead{
+     font-size:90%;
+   }
+}
+
+.fun{
+  width:100%;
+  margin-bottom:4px;
+  padding-top: 0px;
+}
+.gif{
+  max-width:100%;
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('tghd.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}

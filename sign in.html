@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<head><title>Javascript</title></head>
+
+<body bgcolor="black" text="white" style="font-family:Helvetica,arial-sans;text-align:center;background-image:url(bg.jpg)">
+
+<h1>AnimeZone</h1>
+<h3>Sign In</h3>
+<form style="text-align:center; padding:50px,0px,0px,0px">
+  Username:<input type="Username" name="username"><br>
+  Password :<input type="Password"  name="password"><br>
+  <br>
+  <input   type="Submit" value="submit" onclick="fun()">
+
+</form>
+<script type="text/javascript">
+
+function fun()
+{var x=document.forms[0].elements[0].value;
+alert("Hello Welcome "+ x +" to Animezone");
+document.write("Go back<a href='index.html'>Here</a>");
+}
+</script>
+
+
+  </body>
+  </html>
